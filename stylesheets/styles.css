@@ -1,0 +1,19 @@
+/* Move down content because we have a fixed navbar that is 3.5rem tall */
+body {
+    padding-top: 3.5rem;
+  }
+
+.navbar-img {
+    padding-right: 1rem;
+}
+
+.svg-logo {
+    padding-top: 3.5rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.construction-body {
+    text-align: center;
+}
