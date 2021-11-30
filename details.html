@@ -1,74 +1,101 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <title>Fossilized Containers</title>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <link rel="icon" href="img/small_logo.png">
-        <link href="stylesheets/external/bootstrap.min.css" rel="stylesheet">
-        <link href="stylesheets/styles.css" rel="stylesheet">
+    <title>Fossilized Containers</title>
 
-    </head>
-    <body>
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-            <img class="navbar-img" src="img/small_logo.png"/>
-            <a class="navbar-brand" href="index.html">Fossilized Containers</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+    <link rel="icon" href="img/small_logo.png">
+    <link href="stylesheets/external/bootstrap.min.css" rel="stylesheet">
+    <link href="stylesheets/styles.css" rel="stylesheet">
 
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-              <ul class="navbar-nav mr-right">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <img class="navbar-img" src="img/small_logo.png" />
+        <a class="navbar-brand" href="index.html">Fossilized Containers</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav mr-right">
                 <li class="nav-item">
-                  <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item ">
-                  <a class="nav-link" href="team.html">The Team</a>
+                    <a class="nav-link" href="team.html">The Team</a>
                 </li>
                 <li class="nav-item active">
-                  <a class="nav-link" href="details.html">Project Details <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="details.html">Project Details <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="solution.html">Our Solution</a>
+                    <a class="nav-link" href="solution.html">Our Solution</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="documentation.html">Documentation</a>
+                    <a class="nav-link" href="documentation.html">Documentation</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="https://github.com/FossilizedContainers" target="_blank">Codebase</a>
+                    <a class="nav-link" href="https://github.com/FossilizedContainers" target="_blank">Codebase</a>
                 </li>
-              </ul>
-            </div>
-          </nav>
+            </ul>
+        </div>
+    </nav>
 
-        <main role="main">
-          <div class="container-fluid">
+    <main role="main">
+        <div class="container-fluid">
             <div class="construction-body">
-            <div class="information">
-                <h1> Project Description </h1>
-                <p>
-                    A current problem within the research community is that not every climate scientist has the skillset to create their own containers since it is newer technology. Having scientists who are trying to contribute to PReSto learn the intricacies of containerization is inefficient. PReSto aims to create a streamlined process so that scientists can contribute their models in a more efficient manner. This is what the team, Fossilized Containers, is going to solve. The team will create a command line interface, CLI, for scientists interacting with PReSto so that they can submit their models in an efficient manner that is easily accessible and language agnostic. The CLI is bundled within the Fossilized Controller, the overarching tool that helps scientists build and communicate with their containers. The tool will guide the user through the container creation process with prompts for clarification. From there, they can run the models or send files with the help of adapter libraries. The libraries are added to the model code so that the Fossilized Controller can adequately communicate with the containers.
-                </p>
+                <div class="information">
 
-                <h1> Schedule </h1>
-                <p></p>
+                    <h1> Background </h1>
+                    <p> Explain presto and stuff a bit more here </p>
+                    <h1> Project Description </h1>
+                    <p>
+                        Climate change is a pressing issue that researchers have been actively trying to combat in the past few decades. One field of research meant to aid this battle is paleoclimatology, the study of past climates. By understanding
+                        how climate has changed over the past several thousand years, scientists can predict and prepare for what will happen. With different types of data gathered all around the world, paleoclimatologists have been able to create
+                        climate reconstructions that can show temperatures of different regions across history. It is important for scientists to share these climate models amongst each other but it can become difficult with how complex the models
+                        can become.
+                    </p>
+                    <p>
+                        Our client, Nicholas McKay, is an associate professor at NAU and a researcher in the Paleoclimate Dynamics Laboratory (PDL) working with these climate models.
+                        PDL, along with collaborators at the University of Southern California, have worked to create a system that gathers reconstructions and provides constant updates. This is the Paleoclimate Reconstruction Storehouse, otherwise
+                        known as PReSto.
 
-                <h1> Requirements </h1>
-                <p></p>
+                        With PReSto, Dr. McKay and collaborators can accept different datasets and models from different researchers and submit them to their system. With the thousands of types of datasets, however, it is difficult for researchers to
+                        submit their code to PReSto without an existing standardized way to review them. Scientists use a multitude of programming languages, libraries, dependencies, and operating systems that are not guaranteed to work on other
+                        systems. Containerization is a way to package software so that it will be compatible across different host operating systems. It also allows users to test a model without having to install different libraries or dependencies.
+                        They simply need to build a container and run it to view the model.
+                    </p>
 
+                    <p>
+                        A current problem within the research community is that not every climate scientist has the skillset to create their own containers since it is newer technology. Having scientists who are trying to contribute to PReSto learn
+                        the intricacies of containerization is inefficient. PReSto aims to create a streamlined process so that scientists can contribute their models in a more efficient manner. This is what the team, Fossilized Containers, is going
+                        to solve. The team will create a command line interface, CLI, for scientists interacting with PReSto so that they can submit their models in an efficient manner that is easily accessible and language agnostic. The CLI is
+                        bundled within the Fossilized Controller, the overarching tool that helps scientists build and communicate with their containers. The tool will guide the user through the container creation process with prompts for
+                        clarification. From there, they can run the models or send files with the help of adapter libraries. The libraries are added to the model code so that the Fossilized Controller can adequately communicate with the containers.
+                    </p>
+
+                    <h1> Schedule </h1>
+                    <p></p>
+
+                    <h1> Requirements </h1>
+                    <p></p>
+
+                </div>
             </div>
-            </div>
-          </div>
-        </main>
+        </div>
+    </main>
 
-        <!-- Bootstrap scripts -->
-        <script src="scripts/jquery-3.3.1.slim.min.js"></script>
+    <!-- Bootstrap scripts -->
+    <script src="scripts/jquery-3.3.1.slim.min.js"></script>
 
-        <script src="scripts/popper.min.js"></script>
+    <script src="scripts/popper.min.js"></script>
 
-        <script src="scripts/bootstrap.min.js"></script>
-    </body>
+    <script src="scripts/bootstrap.min.js"></script>
+</body>
+
 </html>
