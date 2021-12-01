@@ -1,64 +1,270 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        
-        <title>Fossilized Containers</title>
 
-        <link rel="icon" href="img/small_logo.png">   
-        <link href="stylesheets/external/bootstrap.min.css" rel="stylesheet">
-        <link href="stylesheets/styles.css" rel="stylesheet">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    </head>
-    <body>
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-            <img class="navbar-img" src="img/small_logo.png"/>
-            <a class="navbar-brand" href="index.html">Fossilized Containers</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-      
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-              <ul class="navbar-nav mr-right">
+    <title>Fossilized Containers</title>
+
+    <link rel="icon" href="img/small_logo.png">
+    <link href="stylesheets/external/bootstrap.min.css" rel="stylesheet">
+    <link href="stylesheets/styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <img class="navbar-img" src="img/small_logo.png" />
+        <a class="navbar-brand" href="index.html">Fossilized Containers</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav mr-right">
                 <li class="nav-item">
-                  <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item ">
-                  <a class="nav-link" href="team.html">The Team</a>
+                    <a class="nav-link" href="team.html">The Team</a>
                 </li>
                 <li class="nav-item ">
-                  <a class="nav-link" href="details.html">Project Details</a>
+                    <a class="nav-link" href="details.html">Project Details</a>
                 </li>
                 <li class="nav-item active">
-                  <a class="nav-link" href="solution.html">Our Solution <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="solution.html">Our Solution <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="documentation.html">Documentation</a>
+                    <a class="nav-link" href="documentation.html">Documentation</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link disabled" href="#">Codebase</a>
+                    <a class="nav-link" href="https://github.com/FossilizedContainers" target="_blank">Codebase</a>
                 </li>
-              </ul>
-            </div>
-          </nav>
+            </ul>
+        </div>
+    </nav>
 
-        <main role="main">
-          <div class="container-fluid">
+    <main role="main">
+        <div class="container">
             <div class="construction-body">
-            <object class="svg-logo" type="image/svg+xml" data="img/under_construction.svg"></object>
-              <h1 class="display-4"> Under Construction </h1>
-              <p> Our future project solution and technologies.</p>
-            </div>
-          </div>
-        </main>
-        
-        <!-- Bootstrap scripts -->
-        <script src="scripts/jquery-3.3.1.slim.min.js"></script>
 
-        <script src="scripts/popper.min.js"></script>
-    
-        <script src="scripts/bootstrap.min.js"></script>
-    </body>
+                <h1>
+                    Our Solution
+                </h1>
+
+                <div class="row mb-5 mt-5">
+                    <div class="col-md-6 align-items-center my-auto">
+                        <h2>Fossilized Controller</h2>
+                        <p class="text-justify">
+                            This tool, which we call the Fossilized Controller, will provide
+                            a user interface to help create, run, and manage PReSto containers.
+                            The main function of the Fossilized Controller is to guide scientists through the process of
+                            creating their container. The purpose of our tool is that instead of having to learn about containerization, scientists can use our
+                            tool to create an easy way to share their climate models. Ample documentation will be provided to the scientists so that they can have a
+                            good understanding of how to use the tool. The benefits of using our tool is that instead of having to learn Docker, they simply have to
+                            run our commands that create the containers for the scientists.
+                        </p>
+                    </div>
+
+                    <div class="col-md-6 align-items-center my-auto">
+                        <img src="img/cli_example.png" alt="example showing CLI usage">
+
+                    </div>
+
+                </div>
+
+                <div class="row mb-5">
+                    <div class="col-md-6 align-items-center my-auto">
+                        <h2>PReSto Containers</h2>
+                        <p class="text-justify">
+                            Our solution to help paleoclimatologists is a tool to facilitate the containerization of their climate reconstruction programs into what we call a PReSto Container.
+                            This is a regular Docker container but has components special to the Fossilized Controller. The first component of a PReSto container is the climate model program
+                            within it. The scientist only has to pass any needed required parameters through the Fossilized Controller to the PReSto container. From there, the container can also
+                            return output files from the model. The user will have minimal involvement for the creation of the PReSto container aside from some prompts in the beginning.
+                        </p>
+                    </div>
+
+                    <div class="col-md-6 align-items-center my-auto">
+                        <img src="img/prestocontainer.png" alt="a PReSto Container is a Docker container with a climate model">
+
+                    </div>
+
+                </div>
+
+                <div class="row mb-5">
+                    <div class="col-md-6 align-items-center my-auto">
+                        <h2>External Services</h2>
+                        <p class="text-justify">
+                            The controller will be downloaded through our Github repository, and once installed can be used to start the containerization process and eventually upload the container to
+                            a hosting service, such as docker hub. To aid in the use of our tool we also plan to host documentation on a website containing all of the features as well as technical internals, making it simple to use. The last part of
+                            our
+                            solution is the ability to connect the Controller to external services, such as a website for viewing the resulting climate reconstruction.
+                        </p>
+                    </div>
+
+                    <div class="col-md-6 align-items-center my-auto">
+                        <img src="img/external_services.png" alt="Diagram showing external services">
+
+                    </div>
+
+                </div>
+
+
+                <div class="row mb-5">
+                    <div class="col-md-6 align-items-center my-auto">
+                        <h2>System Architecture</h2>
+                        <p class="text-justify">
+                            Everything comes together to create our entire system.
+                            From there, scientists can use the Fossilized Controller to send files to the container as well as receive output files. Climate reconstruction programs are written in a number of different languages, mainly Python, R, and
+                            Matlab,
+                            and our tool should work for all of them. To fulfill this, the communication between the Fossilized Controller and PReSto Containers doesn’t use any programming language specific features - it uses an HTTP connection. This
+                            allows
+                            us to ignore the contents of the container as long as it properly communicates with an HTTP client in our Controller.
+
+                            In order to achieve this, we are creating adapter libraries. Scientists need to add a few lines of code provided to them that will create a local server within the container so that the Fossilized Container can
+                            establish a connection to it.
+                        </p>
+                    </div>
+
+                    <div class="col-md-6 align-items-center my-auto">
+                        <img src="img/diagram.png" alt="project diagram">
+
+                    </div>
+
+                </div>
+
+                <h1>
+                    Technologies
+                </h1>
+
+                <div class="row mb-5">
+                    <div class="col-md-6">
+                        <h2>Docker</h2>
+                        <p class="text-justify">
+                            Docker is the tool that creates containers. There are other tools that also create containers but Docker is the most popular tool among them. Our client has also
+                            specified that they want to use Docker. The most beneficial part about Docker to us is the Docker Software Developer Kits (SDKS) that allows us to communicate with the
+                            Docker daemon. The SDK is what will allow us to create tools that can essentially run Docker commands.
+                        </p>
+                    </div>
+
+                    <div class="col-md-6 align-items-center my-auto">
+                        <img class="tech-images" src="img/techlogos/docker.png" alt="Docker Logo">
+
+                    </div>
+                </div>
+
+                <div class="row mb-5">
+                    <div class="col-md-6">
+                        <h2>Python</h2>
+                        <p class="text-justify">
+                            We have decided to use Python as our language of choice for the CLI since it is the language we are most comfortable with. Scientists at our client's lab
+                            are also familiar with Python so creating the tool in it will allow the lab to easily add new features to the tool past capstone.
+
+                            One of our adapter libraries also have to be in Python.
+                        </p>
+                    </div>
+
+                    <div class="col-md-6 align-items-center my-auto">
+                        <img class="tech-images" src="img/techlogos/python.png" alt="Python Logo">
+
+                    </div>
+                </div>
+
+                <div class="row mb-5">
+                    <div class="col-md-6">
+                        <h2>R</h2>
+                        <p class="text-justify">
+                            R is a common language used when creating climate models so we are creating an adapter library for the language.
+                        </p>
+                    </div>
+
+                    <div class="col-md-6 align-items-center my-auto">
+                        <img class="tech-images" src="img/techlogos/r.png" alt="R Logo">
+
+                    </div>
+                </div>
+
+
+                <div class="row mb-5">
+                    <div class="col-md-6">
+                        <h2>HTTP</h2>
+                        <p class="text-justify">
+                            We are going to use HTTP for communicating between the Fossilized Controller and PReSto Containers. HTTP connections provide good security and doesn't require
+                            the controller to be running on the same filesystem as PReSto Containers.
+                        </p>
+                    </div>
+
+                    <div class="col-md-6 align-items-center my-auto ">
+                        <img class="tech-images" src="img/techlogos/http.png" alt="HTTP Logo">
+
+                    </div>
+                </div>
+
+
+                <div class="row mb-5">
+                    <div class="col-md-6">
+                        <h2>Flask</h2>
+                        <p class="text-justify">
+                            Flask is a microframework for building HTTP servers quickly in Python.
+                            Since it is a microframework, its compactness won’t inflate container sizes and makes it very simple to build an HTTP server that sends and receives files.
+                            Flask
+                        </p>
+                    </div>
+
+                    <div class="col-md-6 align-items-center my-auto">
+                        <img class="tech-images" src="img/techlogos/flask.png" alt="Flask Logo">
+
+                    </div>
+                </div>
+
+
+                <div class="row mb-5">
+                    <div class="col-md-6">
+                        <h2>httpuv</h2>
+                        <p class="text-justify">
+                            Httpuv is a package available for the R programming language to create servers. It is easy to use and holds all the required components for
+                            creating an HTTP connection and sending files through it.
+                        </p>
+                    </div>
+
+                    <div class="col-md-6 align-items-center my-auto">
+                        <img class="tech-images" src="img/techlogos/box.png" alt="Package">
+
+                    </div>
+                </div>
+
+
+                <div class="row mb-5">
+                    <div class="col-md-6">
+                        <h2>LiPDverse</h2>
+                        <p class="text-justify">
+                            LiPDverse is a library available in Python and R that provides functionality for interacting with LiPD files. We are going to be using it so that we
+                            can properly work with the different files associated with climate models
+                        </p>
+                    </div>
+
+                    <div class="col-md-6 align-items-center my-auto">
+                        <img class="tech-images" src="img/techlogos/lipd.png" alt="LiPD Logo">
+
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Bootstrap scripts -->
+    <script src="scripts/jquery-3.3.1.slim.min.js"></script>
+
+    <script src="scripts/popper.min.js"></script>
+
+    <script src="scripts/bootstrap.min.js"></script>
+</body>
+
 </html>
