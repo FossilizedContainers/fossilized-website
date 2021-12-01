@@ -130,3 +130,8 @@ body{margin-top:20px;}
 .testimonial .testimony-body {
     font-size: .9em;
 }
+
+.card-title {
+    text-align: center;
+    font-size: 1em;
+}
