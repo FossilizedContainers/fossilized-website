@@ -47,30 +47,48 @@
     </nav>
 
     <main role="main">
-        <div class="container-fluid">
-            <div class="construction-body">
+        <div class="container">
+            <div class="">
                 <div class="information">
 
 
                     <h1> Project Description </h1>
-                    <p>
-                        Climate change is a pressing issue that researchers have been actively trying to combat in the past few decades. One field of research meant to aid this battle is paleoclimatology, the study of past climates. By understanding
-                        how climate has changed over the past several thousand years, scientists can predict and prepare for what will happen. With different types of data gathered all around the world, paleoclimatologists have been able to create
-                        climate reconstructions that can show temperatures of different regions across history. It is important for scientists to share these climate models amongst each other but it can become difficult with how complex the models
-                        can become.
-                    </p>
-                    <p>
+
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p class="text-justify">
+                                Climate change is a pressing issue that researchers have been actively trying to combat in the past few decades. One field of research meant to aid this battle is paleoclimatology, the study of past climates. By
+                                understanding
+                                how climate has changed over the past several thousand years, scientists can predict and prepare for what will happen. With different types of data gathered all around the world, paleoclimatologists have been able to
+                                create
+                                climate reconstructions that can show temperatures of different regions across history. It is important for scientists to share these climate models amongst each other but it can become difficult with how complex the
+                                models
+                                can become.
+                            </p>
+                        </div>
+
+                        <div class="col-md-6 align-items-center my-auto">
+                            <img src="img/workflow.png" alt="There is not a simple way to share climate models">
+                        </div>
+                    </div>
+
+                    <p class="text-justify">
                         Our client, Nicholas McKay, is an associate professor at NAU and a researcher in the Paleoclimate Dynamics Laboratory (PDL) working with these climate models.
-                        PDL, along with collaborators at the University of Southern California, have worked to create a system that gathers reconstructions and provides constant updates. This is the Paleoclimate Reconstruction Storehouse, otherwise
+                        PDL, along with collaborators at the University of Southern California, have worked to create a system that gathers reconstructions and provides constant updates. This is the Paleoclimate Reconstruction Storehouse,
+                        otherwise
                         known as PReSto.
 
-                        With PReSto, Dr. McKay and collaborators can accept different datasets and models from different researchers and submit them to their system. With the thousands of types of datasets, however, it is difficult for researchers to
-                        submit their code to PReSto without an existing standardized way to review them. Scientists use a multitude of programming languages, libraries, dependencies, and operating systems that are not guaranteed to work on other
-                        systems. Containerization is a way to package software so that it will be compatible across different host operating systems. It also allows users to test a model without having to install different libraries or dependencies.
+                        With PReSto, Dr. McKay and collaborators can accept different datasets and models from different researchers and submit them to their system. With the thousands of types of datasets, however, it is difficult for
+                        researchers to
+                        submit their code to PReSto without an existing standardized way to review them. Scientists use a multitude of programming languages, libraries, dependencies, and operating systems that are not guaranteed to work on
+                        other
+                        systems. Containerization is a way to package software so that it will be compatible across different host operating systems. It also allows users to test a model without having to install different libraries or
+                        dependencies.
                         They simply need to build a container and run it to view the model.
                     </p>
-                    <img src="img/workflow.png" alt="There is not a simple way to share climate models">
-                    <p>
+
+                    <p class="text-justify">
                         A current problem within the research community is that not every climate scientist has the skillset to create their own containers since it is newer technology. Having scientists who are trying to contribute to PReSto learn
                         the intricacies of containerization is inefficient. PReSto aims to create a streamlined process so that scientists can contribute their models in a more efficient manner. We will create a command line interface, CLI, for
                         scientists interacting with PReSto so that they can submit their models in an efficient manner that is easily accessible and language agnostic. The CLI is
@@ -81,47 +99,63 @@
 
 
                     <h1> Requirements </h1>
-                    <p>
-                        The main high level requirements for our project are: creating a command line interface and communicating with containers
+                    <p class="text-justify">
+                        Our main high level requirements are to create a command line tool and to communicate with created containers
                     </p>
 
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul>
+                                <li>Command Line Interface (CLI)
+                                    <ul>
+                                        <li>Guide users through containerization process</li>
+                                        <li>Run containers with climate model parameters</li>
+                                        <li>Create containers</li>
+                                        <li>Run containers</li>
+                                        <li>Remove containesr</li>
+                                        <li>Collect climate model output</li>
+                                    </ul>
+                                </li>
+
+                                <li>Communicating With Containers
+                                    <ul>
+                                        <li>Send files to container</li>
+                                        <li>Receive files from container</li>
+                                    </ul>
+                                </li>
+                                <li>Adapter Libraries
+                                    <ul>
+                                        <li>R Library to connect CLI and containers</li>
+                                        <li>Python Library to connect CLI and containers</li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <div class="col-md-6 align-items-center my-auto">
+                            <img src="img/manage_containers.png" alt="Diagram showing the CLI spawning, running and destroying containers">
+
+                        </div>
+
+                    </div>
+                    <!--
+                    <img src="img/communicating_containers.png" alt="Diagram showing the CLI communicating with a Docker container">
+                    <img src="img/adapter_library.png" alt="Diagram showing adapter libraries sending and receiving files">
+
+                    -->
                     <h1> Schedule </h1>
                     <img src="img/schedule.png" alt="Team Development Schedule">
 
                 </div>
+
             </div>
         </div>
 
-        <ul>
-            <li>Command Line Interface (CLI)
-                <ul>
-                    <li>Guide users through containerization process</li>
-                    <li>Run containers with climate model parameters</li>
-                    <li>Create containers</li>
-                    <li>Run containers</li>
-                    <li>Remove containesr</li>
-                    <li>Collect climate model output</li>
-                </ul>
-            </li>
-            <img src="img/manage_containers.png" alt="Diagram showing the CLI spawning, running and destroying containers">
 
-            <li>Communicating With Containers
-                <ul>
-                    <li>Send files to container</li>
-                    <li>Receive files from container</li>
-                </ul>
-            </li>
-            <img src="img/communicating_containers.png" alt="Diagram showing the CLI communicating with a Docker container">
 
-            <li>Adapter Libraries
-                <ul>
-                    <li>R Library to connect CLI and containers</li>
-                    <li>Python Library to connect CLI and containers</li>
-                </ul>
-            </li>
-            <img src="img/adapter_library.png" alt="Diagram showing adapter libraries sending and receiving files">
 
-        </ul>
     </main>
 
     <!-- Bootstrap scripts -->
