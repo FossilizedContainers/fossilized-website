@@ -51,8 +51,7 @@
             <div class="construction-body">
                 <div class="information">
 
-                    <h1> Background </h1>
-                    <p> Explain presto and stuff a bit more here </p>
+
                     <h1> Project Description </h1>
                     <p>
                         Climate change is a pressing issue that researchers have been actively trying to combat in the past few decades. One field of research meant to aid this battle is paleoclimatology, the study of past climates. By understanding
@@ -73,21 +72,52 @@
 
                     <p>
                         A current problem within the research community is that not every climate scientist has the skillset to create their own containers since it is newer technology. Having scientists who are trying to contribute to PReSto learn
-                        the intricacies of containerization is inefficient. PReSto aims to create a streamlined process so that scientists can contribute their models in a more efficient manner. This is what the team, Fossilized Containers, is going
-                        to solve. The team will create a command line interface, CLI, for scientists interacting with PReSto so that they can submit their models in an efficient manner that is easily accessible and language agnostic. The CLI is
-                        bundled within the Fossilized Controller, the overarching tool that helps scientists build and communicate with their containers. The tool will guide the user through the container creation process with prompts for
-                        clarification. From there, they can run the models or send files with the help of adapter libraries. The libraries are added to the model code so that the Fossilized Controller can adequately communicate with the containers.
+                        the intricacies of containerization is inefficient. PReSto aims to create a streamlined process so that scientists can contribute their models in a more efficient manner. This is what we are going to solve by creating a
+                        command line interface tool that guides scientists through the containerization process.
+                    </p>
+
+                    <h1> Requirements </h1>
+                    <p>
+                        The main high level requirements for our project are: creating a command line interface and communicating with containers
                     </p>
 
                     <h1> Schedule </h1>
-                    <p></p>
-
-                    <h1> Requirements </h1>
-                    <p></p>
+                    <img src="img/schedule.png" alt="Team Development Schedule">
 
                 </div>
             </div>
         </div>
+
+        <ul>
+            <li>Command Line Interface (CLI)
+                <ul>
+                    <li>Guide users through containerization process</li>
+                    <li>Run containers with climate model parameters</li>
+                    <li>Create containers</li>
+                    <li>Run containers</li>
+                    <li>Remove containesr</li>
+                    <li>Collect climate model output</li>
+                </ul>
+            </li>
+            <img src="img/manage_containers.png" alt="Diagram showing the CLI spawning, running and destroying containers">
+
+            <li>Communicating With Containers
+                <ul>
+                    <li>Send files to container</li>
+                    <li>Receive files from container</li>
+                </ul>
+            </li>
+            <img src="img/communicating_containers.png" alt="Diagram showing the CLI communicating with a Docker container">
+
+            <li>Adapter Libraries
+                <ul>
+                    <li>R Library to connect CLI and containers</li>
+                    <li>Python Library to connect CLI and containers</li>
+                </ul>
+            </li>
+            <img src="img/adapter_library.png" alt="Diagram showing adapter libraries sending and receiving files">
+
+        </ul>
     </main>
 
     <!-- Bootstrap scripts -->
