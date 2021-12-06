@@ -104,7 +104,7 @@
                     </p>
 
 
-
+                    <h2>Functional Requirements</h2>
                     <div class="row">
                         <div class="col-md-6">
                             <ul>
@@ -140,15 +140,72 @@
 
                         </div>
 
+
+
+
+
                     </div>
-                    <!--
+
+                    <h2>Non-Functional Requirements</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul>
+                                <li>Send Large Files
+                                    <ul>
+                                        <li>Send large files from CLI to container and vise versa</li>
+                                        <li>Handle at least 5735 kilobtyes (largest size of the largest set of LiPD files</li>
+                                        <li>Tested against files between 5,000 kilobtyes up to 10 gigabytes</li>
+                                    </ul>
+                                </li>
+
+                                <li>Appropriate Response Length
+                                    <ul>
+                                        <li>Send files to container</li>
+                                        <li>Receive files from container</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h2>Constraints</h2>
+                    <div class="row">
+                        <ul>
+                            <li>Integrating Software With Platforms
+                                <ul>
+                                    <li>Controller interacts with Github</li>
+                                    <li>Controller interacts with Dockerhub</li>
+                                </ul>
+                            </li>
+
+                            <li>Language Agnostic
+                                <ul>
+                                    <li>Containerize any programming language</li>
+                                </ul>
+                            </li>
+
+                            <li>LiPD Library
+                                <ul>
+                                    <li>Must use the provided LiPD library to work with filetypes</li>
+                                </ul>
+                            </li>
+
+                            <li>Compatible Across Different Systems
+                                <ul>
+                                    <li>Run on Windows, Mac and Linux</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--
                     <img src="img/communicating_containers.png" alt="Diagram showing the CLI communicating with a Docker container">
                     <img src="img/adapter_library.png" alt="Diagram showing adapter libraries sending and receiving files">
 
                     -->
-                </div>
-
             </div>
+
+        </div>
         </div>
 
 
