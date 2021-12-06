@@ -46,6 +46,7 @@
         </div>
     </nav>
 
+
     <main role="main">
         <div class="container">
             <div class="construction-body">
@@ -54,10 +55,24 @@
                     Our Solution
                 </h1>
 
+                <!-- Navbar for sections -->
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#arch">Overall Solution</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#technologies">Technologies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#schedule">Schedule</a>
+                    </li>
+
+                </ul>
+
                 <!-- Call to Action-->
                 <div class="card text-white bg-secondary my-5 py-4 text-center">
 
-                    <div class="card-body">
+                    <div class="card-body" id="arch">
                         <p class="text-white m-0">We are creating a command line interface tool to help scientists containerize their code.</p>
                     </div>
 
@@ -144,7 +159,7 @@
 
                 </div>
 
-                <h1>
+                <h1 id="technologies">
                     Technologies
                 </h1>
 
@@ -260,7 +275,7 @@
                     </div>
                 </div>
 
-                <h1> Schedule </h1>
+                <h1 id="schedule"> Schedule </h1>
                 <img src="img/schedule.png" alt="Team Development Schedule">
                 <p class="text-justify">
                     We are currently on track to begin working on our main milestones for the Spring semester. After investigating the different technologies and tools that we will be using we are able
@@ -281,6 +296,8 @@
     <script src="scripts/popper.min.js"></script>
 
     <script src="scripts/bootstrap.min.js"></script>
+
+    <script src="scripts/dropdown.js"></script>
 </body>
 
 </html>
