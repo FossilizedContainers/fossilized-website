@@ -25,11 +25,17 @@ body {
 }
 
 img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .tech-images {
     max-width: 25%;
+}
+
+.intro-vid {
+    max-width: 50%;
+    display: block;
+    margin: 0 auto;
 }

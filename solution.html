@@ -46,6 +46,7 @@
         </div>
     </nav>
 
+
     <main role="main">
         <div class="container">
             <div class="construction-body">
@@ -53,6 +54,29 @@
                 <h1>
                     Our Solution
                 </h1>
+
+                <!-- Navbar for sections -->
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#arch">Overall Solution</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#technologies">Technologies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#schedule">Schedule</a>
+                    </li>
+
+                </ul>
+
+                <!-- Call to Action-->
+                <div class="card text-white bg-secondary my-5 py-4 text-center">
+
+                    <div class="card-body" id="arch">
+                        <p class="text-white m-0">We are creating a command line interface tool to help scientists containerize their code.</p>
+                    </div>
+
+                </div>
 
                 <div class="row mb-5 mt-5">
                     <div class="col-md-6 align-items-center my-auto">
@@ -135,7 +159,7 @@
 
                 </div>
 
-                <h1>
+                <h1 id="technologies">
                     Technologies
                 </h1>
 
@@ -251,7 +275,14 @@
                     </div>
                 </div>
 
-
+                <h1 id="schedule"> Schedule </h1>
+                <img src="img/schedule.png" alt="Team Development Schedule">
+                <p class="text-justify">
+                    We are currently on track to begin working on our main milestones for the Spring semester. After investigating the different technologies and tools that we will be using we are able
+                    to move on to major development. We will begin the semester by creating the part of the tool that guides a scientists through the containerization process. At the same time, we will
+                    work on the Python and R adapters in parallel. Once all three of those components are done, we can start packaging the tool in an easy to install package. From there, we can start
+                    working to connect the user with their containers through the Fossilized Controller. Then we can go into an in-depth testing phase to ensure that we are delivering a quality product.
+                </p>
 
 
 
@@ -265,6 +296,8 @@
     <script src="scripts/popper.min.js"></script>
 
     <script src="scripts/bootstrap.min.js"></script>
+
+    <script src="scripts/dropdown.js"></script>
 </body>
 
 </html>
