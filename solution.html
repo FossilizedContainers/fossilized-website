@@ -40,7 +40,7 @@
                     <a class="nav-link" href="deliverables.html">Deliverables</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://fossilizedcontainers.github.io/tech-demo/" target="_blank">Demo</a>
+                    <a class="nav-link" href="https://www.youtube.com/watch?v=sbh140Ct-BA" target="_blank">Demo</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="https://github.com/FossilizedContainers" target="_blank">Codebase</a>
@@ -61,6 +61,9 @@
                 <!-- Navbar for sections -->
                 <ul class="nav justify-content-center">
                     <li class="nav-item">
+                        <a class="nav-link" href="#key-features">Key Features</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#arch">Overall Solution</a>
                     </li>
                     <li class="nav-item">
@@ -75,11 +78,80 @@
                 <!-- Call to Action-->
                 <div class="card text-white bg-secondary my-5 py-4 text-center">
 
-                    <div class="card-body" id="arch">
+                    <div class="card-body">
                         <p class="text-white m-0">We are creating a command line interface tool to help scientists containerize their code.</p>
                     </div>
 
                 </div>
+
+                <h1 id="key-features" class="display-4"> Key Features </h1>
+                <div class="row mb-5 mt-5">
+                    <div class="col-md-6 align-items-center my-auto">
+                        <h2>presto create</h2>
+                        <p class="text-center">
+                            Create Dockerfiles to create containers in one step. Dockerfiles are what Docker uses to start building containers. The command only asks for the programming language of the files that the main code is in.
+                        </p>
+                    </div>
+
+                    <div class="col-md-6 align-items-center my-auto">
+                        <img src="img/features/create.gif" alt="example showing CLI usage">
+                    </div>
+                </div>
+
+                <div class="row mb-5 mt-5">
+                    <div class="col-md-6 align-items-center my-auto">
+                        <h2>presto build</h2>
+                        <p class="text-center">
+                            Takes in the Dockerfiles and creates an image. An image is the object Docker will use to create containers.
+                        </p>
+                    </div>
+
+                    <div class="col-md-6 align-items-center my-auto">
+                        <img src="img/features/build.gif" alt="example showing CLI usage">
+                    </div>
+                </div>
+
+                <div class="row mb-5 mt-5">
+                    <div class="col-md-6 align-items-center my-auto">
+                        <h2>presto run</h2>
+                        <p class="text-center">
+                            The tool will start running the container and wait for it to finish and send back the results.
+                        </p>
+                    </div>
+
+                    <div class="col-md-6 align-items-center my-auto">
+                        <img src="img/features/run2-1.gif" alt="example showing CLI usage">
+                    </div>
+                </div>
+
+                <div class="row mb-5 mt-5">
+                    <div class="col-md-6 align-items-center my-auto">
+                        <h2>View your output easily</h2>
+                        <p class="text-center">
+                            Results are returned in the form of a zip file. All files inside are easily viewable once uncompressed.
+                        </p>
+                    </div>
+
+                    <div class="col-md-6 align-items-center my-auto">
+                        <img src="img/features/output2.gif" alt="example showing CLI usage">
+                    </div>
+                </div>
+
+                <div class="row mb-5 mt-5">
+                    <div class="col-md-6 align-items-center my-auto">
+                        <h2>presto upload</h2>
+                        <p class="text-center">
+                            The tool will upload an image once the user verifies it is working correctly. By uploading the image, any user can now download it and run their own containers without hassle.
+                        </p>
+                    </div>
+
+                    <div class="col-md-6 align-items-center my-auto">
+                        <img src="img/features/upload.gif" alt="example showing CLI usage">
+                    </div>
+                </div>
+
+
+                <h1 id="arch" class="display-4"> Overall Solution </h1>
 
                 <div class="row mb-5 mt-5">
                     <div class="col-md-6 align-items-center my-auto">
@@ -114,25 +186,7 @@
                     </div>
 
                     <div class="col-md-6 align-items-center my-auto">
-                        <img src="img/prestocontainer.png" alt="a PReSto Container is a Docker container with a climate model">
-
-                    </div>
-
-                </div>
-
-                <div class="row mb-5">
-                    <div class="col-md-6 align-items-center my-auto">
-                        <h2>External Services</h2>
-                        <p class="text-justify">
-                            The controller will be downloaded through our Github repository, and once installed can be used to start the containerization process and eventually upload the container to
-                            a hosting service, such as docker hub. To aid in the use of our tool we also plan to host documentation on a website containing all of the features as well as technical internals, making it simple to use. The last part of
-                            our
-                            solution is the ability to connect the Controller to external services, such as a website for viewing the resulting climate reconstruction.
-                        </p>
-                    </div>
-
-                    <div class="col-md-6 align-items-center my-auto">
-                        <img src="img/external_services.png" alt="Diagram showing external services">
+                        <img src="img/container.png" alt="a PReSto Container is a Docker container with a climate model">
 
                     </div>
 
@@ -157,6 +211,22 @@
 
                     <div class="col-md-6 align-items-center my-auto">
                         <img src="img/diagram.png" alt="project diagram">
+
+                    </div>
+
+                </div>
+
+                <div class="row mb-5">
+                    <div class="col-md-6 align-items-center my-auto">
+                        <h2>External Services</h2>
+                        <p class="text-justify">
+                            The controller will be downloaded through our Github repository, and once installed can be used to start the containerization process and eventually upload the container to
+                            a hosting service, such as Dockerhub. To aid in the use of our tool we also plan to host documentation on a website containing all of the features as well as technical internals, making it simple to use.
+                        </p>
+                    </div>
+
+                    <div class="col-md-6 align-items-center my-auto">
+                        <img src="img/external_services.png" alt="Diagram showing external services">
 
                     </div>
 
@@ -279,12 +349,10 @@
                 </div>
 
                 <h1 id="schedule" class="display-4"> Schedule </h1>
-                <img src="img/schedule.png" alt="Team Development Schedule">
+                <iframe class="clickup-embed" src="https://sharing.clickup.com/14141301/g/h/dfhvn-520/d0dad26c3ce923b" onwheel="" width="100%" height="700px" style="background: transparent; border: 1px solid #ccc;"></iframe>
                 <p class="text-justify">
-                    We are currently on track to begin working on our main milestones for the Spring semester. After investigating the different technologies and tools that we will be using we are able
-                    to move on to major development. We will begin the semester by creating the part of the tool that guides a scientists through the containerization process. At the same time, we will
-                    work on the Python and R adapters in parallel. Once all three of those components are done, we can start packaging the tool in an easy to install package. From there, we can start
-                    working to connect the user with their containers through the Fossilized Controller. Then we can go into an in-depth testing phase to ensure that we are delivering a quality product.
+                    We have remained on track for the Spring semester and have finished major development of the Fossilized Controller. The only things left to do are to finish the user testing portion. We are waiting for participants
+                    to share their feedback about the tool.
                 </p>
 
 
